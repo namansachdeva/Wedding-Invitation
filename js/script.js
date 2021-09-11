@@ -38,8 +38,6 @@ async function manualClick() {
   jQuery('.dance-med').click();
 }
 
-demo();
-
 // Set the date we're counting down to
 var countDownDate = new Date("Oct 20, 2021 20:00:00").getTime();
 
