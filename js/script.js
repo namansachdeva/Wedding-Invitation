@@ -25,10 +25,20 @@ $(document).on('click', function(){
     console.log('Shaadi me zaroor aana');
 });
 
-jQuery(function(){
-   console.log('clicked for song');
-   jQuery('.dance-med').click();
-});
+jQuery(manualClick());
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function manualClick() {
+  console.log('Taking a break...');
+  await sleep(3000);
+  console.log('Three seconds later, clicking now...');
+  jQuery('.dance-med').click();
+}
+
+demo();
 
 // Set the date we're counting down to
 var countDownDate = new Date("Oct 20, 2021 20:00:00").getTime();
