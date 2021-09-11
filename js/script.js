@@ -26,7 +26,7 @@ $(document).on('click', function(){
 });
 
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 29, 2020 00:00:00").getTime();
+var countDownDate = new Date("Oct 20, 2021 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -87,7 +87,7 @@ var styles2 = [
 
 console.log('\n\n%c SAVE THE DATE: 29th Nov, 2020!', styles);
 
-console.log('%cYour presence is requested!%c\n\nRegards: Vinit Shahdeo', styles1, styles2);
+console.log('%cYour presence is requested!%c\n\nRegards, Sachdeva Family', styles1, styles2);
 
 console.log(
     `%cShaadi me zaroor aana!\n\n`,
