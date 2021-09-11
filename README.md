@@ -26,13 +26,13 @@ inviting you and your family to elder sister's wedding to be held on **29th Nove
 
 ```js
 
-const newCouple = 'Sonali & Gagan';
+const newCouple = 'Riddhi & Sai';
 
-// Nov 29, 2020
-const weddingDate = new Date(2020, 11, 29);
+// Oct 20, 2021
+const weddingDate = new Date(2021, 10, 20);
 
 // Wedding venue: https://goo.gl/maps/5z5xX2hTYzU8VGEJ9
-const weddingVenue = new Location('Ashirwad Garden, Ranchi');
+const weddingVenue = new Location('Arnav Resort, Jurasik Park, Murthal');
 
 (function() {
     newCouple.willTieKnot(weddingDate);
