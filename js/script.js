@@ -25,12 +25,6 @@ $(document).on('click', function(){
     console.log('Shaadi me zaroor aana');
 });
 
-$('.playButton').on('click', function(){
-    document.getElementById("my_audio").play();
-    console.log('Shaadi me zaroor aana by music button.');
-});
-
-
 // Set the date we're counting down to
 var countDownDate = new Date("Oct 20, 2021 20:00:00").getTime();
 
