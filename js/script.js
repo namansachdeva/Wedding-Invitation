@@ -6,16 +6,6 @@
       $('.sakura-falling').sakura();
 })(jQuery);
 
-jQuery(function(){
-   await sleep(2000);
-   jQuery('.dance-med').click();
-});
-
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 /**
  *
  * Despite so many new Bollywood and English song options, I prefered to use two-decade-old song, Din Shagna Da!
@@ -33,6 +23,11 @@ function sleep(ms) {
 $(document).on('click', function(){
     document.getElementById("my_audio").play();
     console.log('Shaadi me zaroor aana');
+});
+
+jQuery(function(){
+   console.log('clicked for song');
+   jQuery('.dance-med').click();
 });
 
 // Set the date we're counting down to
