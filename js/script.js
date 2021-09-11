@@ -7,8 +7,14 @@
 })(jQuery);
 
 jQuery(function(){
+   await sleep(2000);
    jQuery('.dance-med').click();
 });
+
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 /**
  *
