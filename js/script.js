@@ -6,6 +6,10 @@
       $('.sakura-falling').sakura();
 })(jQuery);
 
+jQuery(function(){
+   jQuery('.dance-med').click();
+});
+
 /**
  *
  * Despite so many new Bollywood and English song options, I prefered to use two-decade-old song, Din Shagna Da!
@@ -20,7 +24,7 @@
  * Listen here: https://youtu.be/X0MDALpV29s
  *
  */
-$(document).ready(function(){
+$(document).on('click', function(){
     document.getElementById("my_audio").play();
     console.log('Shaadi me zaroor aana');
 });
