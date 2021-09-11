@@ -20,25 +20,16 @@
  * Listen here: https://youtu.be/X0MDALpV29s
  *
  */
-// $(document).on('click', function(){
-//     document.getElementById("my_audio").play();
-//     console.log('Shaadi me zaroor aana');
-// });
+$(document).on('click', function(){
+    document.getElementById("my_audio").play();
+    console.log('Shaadi me zaroor aana');
+});
 
-jQuery(manualClick());
+document.addEventListener('scroll', function (event) {
+    document.getElementById("my_audio").play();
+    console.log('Shaadi me zaroor aana - scroll.');
+}, true /*Capture event*/);
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function manualClick() {
-  console.log('Taking a break...');
-  await sleep(3000);
-  console.log('Three seconds later, clicking now...');
-  jQuery('.dance-med').click();
-  document.getElementById("my_audio").play();
-  console.log('Shaadi me zaroor aana');
-}
 
 // Set the date we're counting down to
 var countDownDate = new Date("Oct 20, 2021 20:00:00").getTime();
