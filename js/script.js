@@ -25,10 +25,10 @@ $(document).on('click', function(){
     console.log('Shaadi me zaroor aana');
 });
 
-document.addEventListener('scroll', function (event) {
+$('.playButton').on('click', function(){
     document.getElementById("my_audio").play();
-    console.log('Shaadi me zaroor aana - scroll.');
-}, true /*Capture event*/);
+    console.log('Shaadi me zaroor aana by music button.');
+});
 
 
 // Set the date we're counting down to
