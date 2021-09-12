@@ -1,0 +1,200 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i");
+$main-font: "Montserrat", sans-serif;
+$accent-font: "Playfair Display", serif;
+
+// COLORS
+$white: #fff;
+$black: #000;
+$palette: #102858, #fff8e0, #fff4d0, #ffda63, #9a978d;
+
+// GENERAL
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: nth($palette, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+// COUNTDOWN STYLES
+.countdown {
+  text-align: center;
+  font-size: 16px;
+  font-family: $main-font;
+  background: nth($palette, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  margin: auto;
+}
+.timer {
+  perspective: 1000px;
+  .box {
+    display: inline-block;
+    margin: 1.5em;
+    width: 175px;
+    text-align: center;
+    background: nth($palette, 3);
+    //needed for firestorm
+    -moz-transform-style: preserve-3d;
+    &:nth-child(2) .value {
+      animation-delay: 1s;
+    }
+    &:nth-child(3) .value {
+      animation-delay: 1.8s;
+    }
+    &:nth-child(4) .value {
+      animation-delay: 1.3s;
+    }
+    &:nth-child(5) .value {
+      animation-delay: 2s;
+    }
+    .spacer {
+      position: relative;
+      content: "";
+      display: block;
+      height: 20px;
+      background: nth($palette, 2);
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        background: nth($palette, 1);
+        border-radius: 50%;
+      }
+      &::before {
+        left: 0.8rem;
+      }
+      &::after {
+        right: 0.8rem;
+      }
+    }
+    .value {
+      position: relative;
+      margin: 0;
+      padding: 0 0 30px;
+      font-family: $accent-font;
+      font-weight: 900;
+      font-size: 6.25em;
+      color: nth($palette, 1);
+      background: nth($palette, 2);
+      transform-origin: top center;
+      animation: wind 4s ease-out alternate infinite;
+      box-shadow: 0 15px 10px -10px rgba(nth($palette, 5), 0);
+    }
+    .label {
+      margin: 0;
+      padding: 15px 0;
+      color: nth($palette, 1);
+      background: nth($palette, 3);
+      text-transform: lowercase;
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+  }
+  .text {
+    margin: 0;
+    font-size: 3.5em;
+    text-transform: lowercase;
+    text-align: center;
+    color: nth($palette, 4);
+    font-family: $accent-font;
+    font-weight: 700;
+    font-style: italic; 
+    padding: 0.25em 0 0.5em;
+  }
+}
+.expired-timer {
+  .box {
+    width: 100%;
+  }
+}
+
+// ANIMATIONS
+@keyframes wind {
+  0% {
+    transform: rotatex(0);
+    box-shadow: 0 15px 10px -10px rgba(nth($palette, 5), 0);
+    color: nth($palette, 1);
+    background: nth($palette, 2);
+  }
+  10% {
+    transform: rotatex(20deg);
+    box-shadow: 0 15px 10px -10px darken(nth($palette, 5), 5%);
+    color: nth($palette, 1);
+    background: lighten(nth($palette, 2), 3%);
+  }
+}
+@keyframes lighting {
+  0% {
+    box-shadow: -16px 0 0 2px rgba($white, 0.5), 14px 0 0 nth($palette, 3);
+  }
+  4% {
+    box-shadow: -16px 0 0 2px rgba($white, 1), 14px 0 0 nth($palette, 3);
+  }
+  8% {
+    box-shadow: -16px 0 0 2px rgba($white, 0.5), 14px 0 0 nth($palette, 3);
+  }
+  12% {
+    box-shadow: -16px 0 0 2px rgba($white, 1), 14px 0 0 nth($palette, 3);
+  }
+  20% {
+    box-shadow: -16px 0 0 2px rgba($white, 1), 14px 0 0 nth($palette, 3);
+  }
+  22% {
+    box-shadow: -16px 0 0 2px rgba($white, 0.5), 14px 0 0 nth($palette, 3);
+  }
+}
+@keyframes lighting2 {
+  0% {
+    box-shadow: 16px 0 0 2px rgba($white, 0.5), -14px 0 0 nth($palette, 3);
+  }
+  4% {
+    box-shadow: 16px 0 0 2px rgba($white, 1), -14px 0 0 nth($palette, 3);
+  }
+  8% {
+    box-shadow: 16px 0 0 2px rgba($white, 0.5), -14px 0 0 nth($palette, 3);
+  }
+  12% {
+    box-shadow: 16px 0 0 2px rgba($white, 1), -14px 0 0 nth($palette, 3);
+  }
+  20% {
+    box-shadow: 16px 0 0 2px rgba($white, 1), -14px 0 0 nth($palette, 3);
+  }
+  22% {
+    box-shadow: 16px 0 0 2px rgba($white, 0.5), -14px 0 0 nth($palette, 3);
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 800px) {
+  .countdown {
+    width: 100%;
+    max-width: 25rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .timer {
+    .box {
+      margin: 1rem 0.5rem;
+      width: 8rem;
+    }
+  }
+  .expired-timer {
+    .box {
+      width: 18rem;
+    }
+  }
+}
