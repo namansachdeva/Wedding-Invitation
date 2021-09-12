@@ -25,7 +25,7 @@ $(document).on('click', function(){
     console.log('Shaadi me zaroor aana');
 });
 
-$('.musicInfoBtn').on('click', function(){
+$('#musicInfoBtn').on('click', function(){
     hide(document.getElementById('musicInfoBtn'));
     console.log('Thanks!');
 });
