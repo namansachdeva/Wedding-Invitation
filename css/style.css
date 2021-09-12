@@ -598,7 +598,7 @@ a {
   background-color: #ffffff;
   width: 2em;
   height: 2em;
-  border: 2px
+  border: 2px;
   border-radius: 50%;
   border-color: #674ea7;
   animation: ripple 0.7s linear infinite;
