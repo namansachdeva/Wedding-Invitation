@@ -25,6 +25,18 @@ $(document).on('click', function(){
     console.log('Shaadi me zaroor aana');
 });
 
+$('.musicInfoBtn').on('click', function(){
+    hide(document.getElementById('musicInfoBtn'));
+    console.log('Thanks!');
+});
+
+function hide (elements) {
+  elements = elements.length ? elements : [elements];
+  for (var index = 0; index < elements.length; index++) {
+    elements[index].style.display = 'none';
+  }
+}
+
 // Set the date we're counting down to
 var countDownDate = new Date("Oct 20, 2021 20:00:00").getTime();
 
