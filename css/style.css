@@ -596,23 +596,23 @@ a {
 
 .playButton {
   background-color: #674ea7;
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
   border-radius: 50%;
   animation: ripple 0.7s linear infinite;
 }
 
 @keyframes ripple {
   0% {
-    box-shadow: 0 0 0 0 rgba($color, 0.3),
-                0 0 0 1em rgba($color, 0.3),
-                0 0 0 3em rgba($color, 0.3),
-                0 0 0 5em rgba($color, 0.3);
+    box-shadow: 0 0 0 0 rgba(#65ff78, 0.3),
+                0 0 0 1em rgba(#65ff78, 0.3),
+                0 0 0 3em rgba(#65ff78, 0.3),
+                0 0 0 5em rgba(#65ff78, 0.3);
   }
   100% {
-    box-shadow: 0 0 0 1em rgba($color, 0.3),
-                0 0 0 3em rgba($color, 0.3),
-                0 0 0 5em rgba($color, 0.3),
-                0 0 0 8em rgba($color, 0);
+    box-shadow: 0 0 0 1em rgba(#65ff78, 0.3),
+                0 0 0 3em rgba(#65ff78, 0.3),
+                0 0 0 5em rgba(#65ff78, 0.3),
+                0 0 0 8em rgba(#65ff78, 0);
   }
 }
