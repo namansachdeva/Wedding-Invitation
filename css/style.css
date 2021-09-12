@@ -577,19 +577,3 @@ a {
 	font-size: 12px;
 	letter-spacing: 0pt;
 }
-
-#musicInfoBtn {
-	width: inline-block;
-	height: auto;
-	background-color: #674ea7;
-	border-radius: 20px;
-	text-align: center;
-	color: #fff;
-	padding: 8px;
-	margin-right: 8px;
-}
-
-#musicInfoBtn a {
-	text-decoration: none;
-	color: #fff;
-}
