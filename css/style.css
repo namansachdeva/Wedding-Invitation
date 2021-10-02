@@ -509,11 +509,11 @@ body {
 }
 
 .hours {
-	background: linear-gradient(90deg, #fda4ba, #fcbacb);
+	background: linear-gradient(90deg, #9e7bb5, #e39ff6);
 }
 
 .minutes {
-	background: linear-gradient(90deg, #9e7bb5, #e39ff6);
+	background: linear-gradient(90deg, #fda4ba, #fcbacb);
 }
 
 .seconds {
