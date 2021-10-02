@@ -505,19 +505,19 @@ body {
 }
 
 .days {
-	background: linear-gradient(90deg, #b33a46, #9b313c);
+	background: linear-gradient(90deg, #7a4988, #be93d4);
 }
 
 .hours {
-	background: linear-gradient(90deg, #a7c3cd, #90a9b2);
+	background: linear-gradient(90deg, #fda4ba, #fcbacb);
 }
 
 .minutes {
-	background: linear-gradient(90deg, #a35476, #874562);
+	background: linear-gradient(90deg, #9e7bb5, #e39ff6);
 }
 
 .seconds {
-	background: linear-gradient(90deg, #1c75b9, #145689);;
+	background: linear-gradient(90deg, #fe7f9c, #fc94af);;
 }
 
 .date {
