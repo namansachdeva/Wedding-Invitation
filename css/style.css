@@ -505,7 +505,7 @@ body {
 }
 
 .days {
-	background: linear-gradient(90deg, #7a4988, #be93d4);
+	background: linear-gradient(90deg, #fda4ba, #fcbacb);
 }
 
 .hours {
@@ -513,7 +513,7 @@ body {
 }
 
 .minutes {
-	background: linear-gradient(90deg, #fda4ba, #fcbacb);
+	background: linear-gradient(90deg, #7a4988, #be93d4);
 }
 
 .seconds {
